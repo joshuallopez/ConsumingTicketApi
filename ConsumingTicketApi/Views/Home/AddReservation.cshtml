@@ -1,0 +1,28 @@
+﻿<h2>Adding New Reservation</h2>
+
+<form method="post" asp-action="AddReservation">
+    <div>
+        <label for="ReservationId">Ticket number: </label>
+        <input name="ReservationId" />
+    </div>
+    <div>
+        <label for="FirstName">First Name: </label>
+        <input name="FirstName" />
+    </div>
+    <div>
+        <label for="LastName">Last Name: </label>
+        <input name="LastName" />
+    </div>
+    <div>
+        <label for="StartLocation">Starting from: </label>
+        <input name="StartLocation" />
+    </div>
+    <div>
+        <label for="EndLocation">Ending at: </label>
+        <input name="EndLocation" />
+    </div>
+    <div>
+        <button type="submit">Add</button>
+    </div>
+
+</form>

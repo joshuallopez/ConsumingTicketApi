@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Reservation>
+
+<h2>All Reservations List</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Ticket number</th>
+            <th>First Name</th>
+            <th>Last Nmae</th>
+            <th>Starting from</th>
+            <th>Ending at</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ReservationId</td>
+                <td>@item.FirstName</td>
+                <td>@item.LastName</td>
+                <td>@item.StartLocation</td>
+                <td>@item.EndLocation</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<table></table>
